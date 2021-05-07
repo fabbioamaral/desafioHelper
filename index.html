@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Helper - Fábio Amaral</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Teste Prático - Helper</h1>
+        <h2>Formulário de Cadastro de Clientes</h2>
+         <p id="candidato">Candidato: Fábio Heleno Amaral Júnior</p>
+    </header>
+
+    <form>
+        <div class="mb-3">
+            <label for="nomeCompleto" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nomeCompleto" placeholder="Insira seu nome completo">
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Insira seu endereço de e-mail">
+        </div>
+
+        <div class="mb-3">
+            <label for="cpf" class="form-label">CPF ou CNPJ</label>
+            <input type="text" class="form-control" id="cpf" placeholder="Insira apenas os números do seu CPF ou CNPJ">
+        </div>
+
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" id="telefone" placeholder="Insira seu telefone com DDD">
+        </div>
+
+        <div class="mb-3">
+            <label for="cep" class="form-label">CEP</label>
+            <input type="text" class="form-control" id="cep" placeholder="Insira seu CEP">
+        </div>
+
+        <div class="mb-3">
+            <label for="logradouro" class="form-label">Logradouro</label>
+            <input type="text" class="form-control" id="logradouro" placeholder="Insira seu logradouro">
+        </div>
+
+        <div id="numero-bairro">
+
+            <div class="mb-3">
+                <label for="numero" class="form-label">Número</label>
+                <input type="numero" class="form-control" id="numero" placeholder="Número">
+            </div>
+
+            <div class="mb-3">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" placeholder="Insira o bairro">
+            </div>
+
+        </div>
+
+        <div id="cidade-estado">
+
+            <div class="mb-3">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade" placeholder="Insira sua cidade">
+            </div>
+            
+            <div id="estadoDiv">
+                <label for="estado" class="form-label" id="estado-label">Estado</label>
+                <select class="form-select" aria-label="Default select example" id="estado">
+                    <option value="1">AC</option>
+                    <option value="2">AL</option>
+                    <option value="3">AP</option>
+                    <option value="4">AM</option>
+                    <option value="5">BA</option>
+                    <option value="6">CE</option>
+                    <option value="7">DF</option>
+                    <option value="8">ES</option>
+                    <option value="9">GO</option>
+                    <option value="10">MA</option>
+                    <option value="11">MT</option>
+                    <option value="12">MS</option>
+                    <option value="13">MG</option>
+                    <option value="14">PA</option>
+                    <option value="15">PB</option>
+                    <option value="16">PR</option>
+                    <option value="17">PE</option>
+                    <option value="18">PI</option>
+                    <option value="19">RJ</option>
+                    <option value="20">RN</option>
+                    <option value="21">RS</option>
+                    <option value="22">RO</option>
+                    <option value="23">RR</option>
+                    <option value="24">SC</option>
+                    <option value="25">SP</option>
+                    <option value="26">SE</option>
+                    <option value="27">TO</option>
+                </select>
+            </div>        
+           
+
+        </div>
+    
+
+    </form>
+
+    <button type="button" class="btn btn-primary" id="registrar-button">Registrar Cliente</button>
+
+    <hr>
+
+    <section>
+
+        <div id="registroClientesDiv">
+
+        </div>
+
+    </section>
+
+    
+
+
+
+
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;    
+}
+
+header{
+    margin:20px 40px;
+}
+
+
+form{
+    margin:0 0 20px 40px;
+}
+
+.form-control{
+    width:460px
+}
+
+#nomeCompleto,#email, #cpf, #logradouro{
+    width:500px;
+}
+
+#cep, #telefone{
+    width:230px;
+}
+
+#numero{
+    width:200px;
+    margin-right:25px;
+}
+
+#bairro, #cidade{
+    width:300px;
+    margin-right:25px;
+}
+
+#numero-bairro, #cidade-estado{
+    display:flex;;
+}
+
+#estado{
+    width:80px;
+    height: 36px;
+}
+
+#estado-label{
+    height:24px;
+}
+
+#registrar-button{
+    margin:0px 0px 10px 40px;
+}
+
+#cliente{
+    margin-left:40px;
+}
+
+.paragrafoNomeDoCampo{
+    font-weight: bold;
+}
+
+#selected{
+    background-color: rgb(190, 190, 190);
+}
