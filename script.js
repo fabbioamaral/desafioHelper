@@ -57,7 +57,12 @@ function registrarCliente(){
     botaoDeletar.setAttribute('id', 'deletar-button');
     botaoDeletar.innerText="Excluir item da lista";
     document.getElementById('cliente').appendChild(botaoDeletar);
-    document.querySelector('#deletar-button').addEventListener('click', deletandoItem);
+    botaoDeletar.onclick=deletandoItem;
+    const comoDeletar = document.createElement('p');
+    comoDeletar.setAttribute("id","comoDeletar")
+    document.getElementById('cliente').appendChild(comoDeletar);
+    comoDeletar.innerText="Antes de abertar o botão, clique em cima do item que deseja excluir";
+
     
     //linha de separação entre clientes
     const linha = document.createElement('hr');
@@ -88,8 +93,15 @@ function selecionandoItem(event){
 
 //função para deletar item selecionado do cadastro do cliente
 function deletandoItem(){
+
+    const checkSelected = document.getElementById('selected');
+    if (checkSelected) {
+        itemSelecionado = document.getElementById('selected');
+        itemSelecionado.innerText="";        
+    } else {
+        alert('Nenhum item foi selecionado. Para selecionar, basta clicar em cima do item.')
+    }
     
-    itemSelecionado = document.getElementById('selected');
-    itemSelecionado.innerText="";
+
     
 }

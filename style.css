@@ -61,3 +61,10 @@ form{
 #selected{
     background-color: rgb(190, 190, 190);
 }
+
+#comoDeletar{
+    color:red;
+    font-weight: bold;
+    font-style: italic;
+    margin-top:5px;
+}
